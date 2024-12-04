@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Vardhini Narupalle - Portfolio</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        nav {
+            background: linear-gradient(90deg, #2c3e50, #3498db);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ecf0f1;
+            transform: scale(1.1);
+        }
+
+        /* About section */
+        #about {
+            background-color: #ecf0f1;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        #about h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        #about p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #7f8c8d;
+        }
+
+        /* Projects section */
+        #projects {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(120deg, #fff, #f0f4f8);
+        }
+
+        #projects h1 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .project-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #7f8c8d;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .card .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .card .btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Contact section */
+        #contact {
+            padding: 80px 0;
+            background-color: #ecf0f1;
+            text-align: center;
+        }
+
+        #contact h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        #contact p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #7f8c8d;
+        }
+
+        .social-links {
+            list-style-type: none;
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .social-links li a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 24px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-links li a:hover {
+            color: #2980b9;
+            transform: scale(1.2);
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <nav>
+        <div class="logo">Harsha Vardhini Narupalle</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hi! I'm Harsha Vardhini, a passionate web developer and software enthusiast. I specialize in creating beautiful and functional websites. My skills include HTML, CSS, JavaScript, and various web development frameworks. I'm always eager to learn and take on new challenges.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="project-cards">
+                <!-- Project 1 -->
+                <div class="card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>Description of the first project.</p>
+                    <a href="https://github.com/username/project1" target="_blank" class="btn">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>Description of the second project.</p>
+                    <a href="https://github.com/username/project2" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>If you would like to collaborate on a project or have any questions, feel free to reach out!</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/harsha-vardhini-a5a180328/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Harshavardhini84" target="_blank">GitHub</a></li>
+                <li><a href="mailto:harshavardhininarupalle@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Harsha Vardhini Narupalle</p>
+    </footer>
+
+</body>
+</html>
